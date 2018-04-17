@@ -1,0 +1,178 @@
+﻿@model SAP_GCL.Models.OutboundDeliveries
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OutboundDeliveries</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.document_numb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.document_numb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.document_item)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.document_item)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ship_to)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ship_to)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sold_to)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sold_to)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sales_organisation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sales_organisation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.distribution_channel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.distribution_channel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.division)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.division)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.plant)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.plant)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sales_unit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sales_unit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.base_uom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.base_uom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.material)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.material)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.delivery_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.delivery_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.delivery_time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.delivery_time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.transp_plan_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.transp_plan_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.loading_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.loading_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.goods_issue_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.goods_issue_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.extdelv_no)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.extdelv_no)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.document_type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.document_type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.document_type_predecessor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.document_type_predecessor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.document_type_delivery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.document_type_delivery)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

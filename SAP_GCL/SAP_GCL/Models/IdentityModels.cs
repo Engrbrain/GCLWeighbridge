@@ -3,6 +3,8 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using SAP_GCL.Models;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace SAP_GCL.Models
 {
@@ -29,5 +31,14 @@ namespace SAP_GCL.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Material> Materials { get; set; }
+        public DbSet<SAP_GCL.Models.GoodRecieptNote> GoodRecieptNotes { get; set; }
+
+        public DbSet<SAP_GCL.Models.OutboundDeliveries> OutboundDeliveries { get; set; }
+        public DbSet<SAP_GCL.Models.GoodMovement> GoodMovement { get; set; }
+        public DbSet<SAP_GCL.Models.DocumentErrors> DocumentErrors { get; set; }
+        public DbSet<SAP_GCL.Models.DataManager> DataManager { get; set; }
+
     }
 }

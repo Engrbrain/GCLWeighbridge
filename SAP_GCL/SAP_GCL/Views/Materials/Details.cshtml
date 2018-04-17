@@ -1,0 +1,122 @@
+﻿@model SAP_GCL.Models.Material
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Material</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Item_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item_Code_No)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item_Code_No)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item_Unit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item_Unit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item_Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item_Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item_Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item_Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item_Max_Qty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item_Max_Qty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item_Min_Qty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item_Min_Qty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Item_Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Item_Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CoCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CoCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EntryDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EntryDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdateDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
