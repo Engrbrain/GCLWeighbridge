@@ -6,27 +6,21 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SAP_GCL.Models
 {
-    public class OpenDeliveries_Header
+    public class POCondition
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         [MaxLength(10)]
-        public string DELIV_NUMB { get; set; }
-        [MaxLength(4)]
-        public string SHIP_POINT { get; set; }
-        [MaxLength(4)]
-        public string DLV_TYPE { get; set; }
-        [MaxLength(4)]
-        public string SALESORG { get; set; }
-        [MaxLength(2)]
-        public string DISTR_CHAN { get; set; }
-        [MaxLength(2)]
-        public string DIVISION { get; set; }
+        public string EBELN { get; set; }
         [MaxLength(10)]
-        public string SHIP_TO { get; set; }
-        [MaxLength(1)]
-        public string DATE_USAGE { get; set; }
-        [MaxLength(1)]
-        public string DEBUG_FLG { get; set; }
+        public string KNUMV { get; set; }
+        [MaxLength(6)]
+        public string ITM_NUMBER { get; set; }
+        [MaxLength(3)]
+        public string BPRME { get; set; }
+        [MaxLength(5)]
+        public string PEINH { get; set; }
+        [MaxLength(8)]
+        public string NETPR { get; set; }
 
     }
 }

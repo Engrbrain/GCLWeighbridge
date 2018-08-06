@@ -25,23 +25,23 @@ namespace SAP_GCL.Models
         public string ZTERM { get; set; }
         [MaxLength(4)]
         public string EKORG { get; set; }
-        [MaxLength(4)]
+        [MaxLength(3)]
         public string EKGRP { get; set; }
-        [MaxLength(4)]
+        [MaxLength(5)]
         public string WAERS { get; set; }
-        [MaxLength(4)]
+        [MaxLength(34)]
         public string BEDAT { get; set; }
-        [MaxLength(4)]
+        [MaxLength(30)]
         public string VERKF { get; set; }
-        [MaxLength(4)]
+        [MaxLength(10)]
         public string LLIEF { get; set; }
-        [MaxLength(4)]
+        [MaxLength(3)]
         public string INCO1 { get; set; }
-        [MaxLength(4)]
+        [MaxLength(28)]
         public string INCO2 { get; set; }
-        [MaxLength(4)]
+        [MaxLength(5)]
         public string UPINC { get; set; }
-        [MaxLength(4)]
+        [MaxLength(3)]
         public string STCEG_L { get; set; }
 
     }

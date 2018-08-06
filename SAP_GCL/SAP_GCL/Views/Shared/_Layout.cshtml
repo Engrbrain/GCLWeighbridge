@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿\<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -32,6 +32,9 @@
     <link href="~/Content/assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
     <link href="~/Content/assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
     <!-- END THEME LAYOUT STYLES -->
+    <!-- INCLUDE CUSTOM CSS-->
+    @RenderSection("customcss", required: false)
+    <!--END INCLUDE CUSTOM CSS-->
     <link rel="shortcut icon" href="favicon.ico" />
 
 </head>

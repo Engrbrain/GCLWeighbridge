@@ -54,5 +54,9 @@ namespace SAP_GCL.Models
 
         [MaxLength(20)]
         public string SAP_Quantity { get; set; }
+
+        public double Changed_Quantity { get; set; }
+        public double Changed_Weight { get; set; }
+        public string ReasonForChange { get; set; }
     }
 }

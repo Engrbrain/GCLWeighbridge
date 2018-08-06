@@ -198,6 +198,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ApplicationUsersController.cs" />
     <Compile Include="Controllers\GoodMovementsController.cs" />
     <Compile Include="Controllers\GoodRecieptNotesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -242,6 +243,8 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\DataManager.cs" />
+    <Compile Include="Models\GoodMovementSelectionViewModel.cs" />
+    <Compile Include="Models\SelectGoodMovementEditorViewModel.cs" />
     <Compile Include="Models\InventoryBalances.cs" />
     <Compile Include="Models\InventoryBalances_LineItem.cs" />
     <Compile Include="Models\InventoryBalances_Header.cs" />
@@ -5108,6 +5111,12 @@
     <Content Include="Content\demo\timeout-keep-alive.php" />
     <Content Include="Content\demo\typeahead_custom.php" />
     <Content Include="Content\demo\username_checker.php" />
+    <Content Include="Content\images\01.jpg" />
+    <Content Include="Content\images\LoginBanner01.jpg" />
+    <Content Include="Content\images\LoginBanner02.jpg" />
+    <Content Include="Content\images\LoginBanner03.jpg" />
+    <Content Include="Content\images\LoginBanner04.jpg" />
+    <Content Include="Content\images\LoginBanner05.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -6077,6 +6086,12 @@
     <Content Include="Views\GoodMovements\Details.cshtml" />
     <Content Include="Views\GoodMovements\Edit.cshtml" />
     <Content Include="Views\GoodMovements\Index.cshtml" />
+    <Content Include="Views\GoodMovements\EditorTemplates\SelectGoodMovementEditorViewModel.cshtml" />
+    <Content Include="Views\ApplicationUsers\Create.cshtml" />
+    <Content Include="Views\ApplicationUsers\Delete.cshtml" />
+    <Content Include="Views\ApplicationUsers\Details.cshtml" />
+    <Content Include="Views\ApplicationUsers\Edit.cshtml" />
+    <Content Include="Views\ApplicationUsers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

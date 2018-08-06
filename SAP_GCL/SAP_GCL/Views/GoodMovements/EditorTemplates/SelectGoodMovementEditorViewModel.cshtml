@@ -1,0 +1,52 @@
+﻿@model SAP_GCL.Models.SelectGoodMovementEditorViewModel
+
+<tr>
+    <td style="text-align:center">
+        @Html.CheckBoxFor(model => model.Selected)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.ref_doc_no)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.material)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.plant)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.stge_loc)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.po_number)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.entry_qnt)
+    </td>
+    <td>
+        @Html.DisplayFor(model => model.SAP_quantity)
+    </td>
+
+    <td>
+        @Html.HiddenFor(model => model.ID)
+    </td>
+    <td>
+        @if (Model.SAP_quantity == Model.entry_qnt)
+        { <span class="alert alert-success">Weight Match</span>
+        }
+        else if (Model.SAP_quantity > Model.entry_qnt)
+        {
+            <span class="alert alert-info">Less Weight</span>
+        }
+        else if (Model.SAP_quantity < Model.entry_qnt)
+        {
+            <span class="alert alert-info">More Weight(Raise PO)</span>
+        }
+    </td>
+
+    <td>
+        <a title="Modify GoodMovements" href="@Url.Action("Edit", "GoodMovements", new { id = Model.ID})" class="btn btn-primary btn-rounded btn-sm"><i class='fa fa-pencil'></i> </a>
+        <a title="View GoodMovements" href="@Url.Action("Details", "GoodMovements", new { id = Model.ID})" class="btn btn-white btn-rounded btn-sm"><i class='fa fa-desktop'></i> </a>
+        <a title="Delete GoodMovements" href="@Url.Action("Delete", "GoodMovements", new { id = Model.ID})" class="btn btn-danger btn-rounded btn-sm"><i class='fa fa-times'></i> </a>
+    </td>
+
+    </tr>

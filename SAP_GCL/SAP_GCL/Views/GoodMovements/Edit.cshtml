@@ -141,7 +141,7 @@
         <!-- BEGIN PAGE TITLE-->
         <h1 class="page-title">
             WeighBridge Goods Receipt
-            <small>These are list of Weighbridge measurement that has not been loaded in SAP</small>
+            <small>You can Modify the Weighbridge Readings here, but the system will record this action against you and you must specify why you are making this change</small>
         </h1>
         <!-- END PAGE TITLE-->
         <!-- END PAGE HEADER-->
@@ -152,7 +152,7 @@
                     <div class="portlet-title">
                         <div class="caption font-dark">
                             <i class="icon-settings font-dark"></i>
-                            <span class="caption-subject bold uppercase"> Weighbridge Goods Receipt Details</span>
+                            <span class="caption-subject bold uppercase">Modify Good Movement Weighbridge Readings</span>
                         </div>
 
                     </div>
@@ -173,10 +173,8 @@
                                 @Html.HiddenFor(model => model.plant)
                                 @Html.HiddenFor(model => model.po_item)
                                 @Html.HiddenFor(model => model.po_number)
-                                @Html.HiddenFor(model => model.prod_date)
                                 @Html.HiddenFor(model => model.pr_uname)
                                 @Html.HiddenFor(model => model.pstng_date)
-                                @Html.HiddenFor(model => model.ref_doc)
                                 @Html.HiddenFor(model => model.ref_doc_no)
                                 @Html.HiddenFor(model => model.SAP_quantity)
                                 @Html.HiddenFor(model => model.stge_loc)
